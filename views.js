@@ -55159,7 +55159,8 @@ var PopUp = /** @class */ (function (_super) {
                 content = [react.createElement(ForgotPasswordConnected, { key: "forgotPasswordConnectedItem" })];
             }
             else {
-                content = [react.createElement(LoginConnected, { key: "loginConnectedItem", forceRegistration: this.state.forceRegistration, onStopRegistrationForcing: onStopRegistrationForcingBound })];
+                // content = [react.createElement(LoginConnected, { key: "loginConnectedItem", forceRegistration: this.state.forceRegistration, onStopRegistrationForcing: onStopRegistrationForcingBound })];
+                content = [react.createElement(SessionListConnected, { onSessionSettings: openSettingsBound, key: "sessionListConnectedItem", onRegistration: onRegistrationBound })];
             }
         }
         return react.createElement("div", { style: { width: '100%', height: '100%' } },
