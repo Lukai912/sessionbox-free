@@ -50064,12 +50064,7 @@ var SessionListView = /** @class */ (function (_super) {
                     var opened = empty || _this.props.openedGroups.indexOf(group.key) !== -1;
                     return react.createElement(SessionGroup, { isLast: index + 1 === arr.length, group: group, currentGroup: false, uid: _this.props.uid, loadingSessions: _this.props.loadingSessions, language: _this.props.language, accountVersion: _this.props.accountVersion, deleteAllCallback: _this.onDeleteAll.bind(_this), currentLaunchUrl: _this.props.currentLaunchUrl, opened: opened, openSessionSettings: _this.props.openSessionSettings, moveAllCallback: _this.onMoveAll.bind(_this), startSetProxyAllCallback: _this.onStartSetProxyAll.bind(_this), showLaunchUrl: _this.props.showLaunchUrl, canEdit: _this.props.grouping === SessionView.BY_GROUP, createBookmark: _this.props.createBookmark, cloneSession: _this.props.cloneSession, isSyncedLimitReached: _this.props.isSyncedLimitReached, hasSubscription: _this.props.hasSubscription, localSessionsCount: _this.props.localSessionsCount, openedSessionsCount: _this.props.openedSessionsCount, isFreePlanLimitFeature: _this.props.isFreePlanLimitFeature });
                 }))),
-            react.createElement("div", { style: { display: 'flex', flexDirection: 'row', paddingTop: '10px', margin: '10px' } },
-                react.createElement("div", { style: { flex: '1 0 0' }, onClick: this.openFb },
-                    react.createElement("img", { src: "/assets/follow_us_fb.png", style: { width: '100%', cursor: 'pointer', maxWidth: '100px' } })),
-                react.createElement("div", { style: { flex: '2 0 0' } }, "\u00A0"),
-                react.createElement("div", { style: { flex: '1 0 0', textAlign: 'right' }, onClick: this.openTwitter },
-                    react.createElement("img", { src: "/assets/follow_us_twitter.png", style: { width: '100%', cursor: 'pointer', maxWidth: '100px' } }))),
+            
             react.createElement(Dialog.default, { title: this.props.language.DELETE_ALL, actions: [
                     react.createElement(FlatButton.default, { label: this.props.language.CANCEL, primary: true, onClick: this.cancelDeleteAll.bind(this), key: 'btnCancel' }),
                     react.createElement(FlatButton.default, { label: this.props.language.DELETE, secondary: true, keyboardFocused: true, onClick: this.deleteEverythingInGroup.bind(this), key: 'btnDelete' }),
